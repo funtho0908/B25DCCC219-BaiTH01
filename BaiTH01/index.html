@@ -1,0 +1,270 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio cá nhân - giới thiệu, kỹ năng và dự án">
+  <title>Portfolio | Nguyễn Thị Phương Thảo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Điều hướng chính">
+      <a class="logo" href="#home">MyPortfolio<span>.</span></a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Mở menu"
+        aria-controls="nav-links"
+        aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+
+      <button class="theme-toggle" type="button"
+        aria-label="Chuyển chế độ sáng tối">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- TRANG CHỦ -->
+    <section class="hero container" id="home">
+      <div class="reveal">
+        <p class="eyebrow">XIN CHÀO, MÌNH LÀ</p>
+        <h1>Nguyễn Thị Phương Thảo</h1>
+        <p class="hero-role">Sinh viên yêu thích Frontend Development</p>
+        <p>
+          Mình đang học HTML, CSS và JavaScript để tạo ra
+          những website đẹp, dễ sử dụng và thân thiện
+          trên mọi thiết bị.
+        </p>
+        <a class="btn" href="#projects">Xem dự án ↓</a>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <span>&lt;/&gt;</span>
+      </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="section alternate" id="about">
+      <div class="container reveal">
+        <p class="eyebrow">VỀ MÌNH</p>
+        <h2>Giới thiệu bản thân</h2>
+        <p>
+          Mình là sinh viên ngành Công nghệ thông tin,
+          quan tâm đến thiết kế giao diện và phát triển web.
+          Mục tiêu của mình là trở thành lập trình viên
+          Frontend chuyên nghiệp.
+        </p>
+
+        <div class="about-info">
+          <div>
+            <strong>Họ tên</strong>
+            <span>Nguyễn Thị Phương Thảo</span>
+          </div>
+          <div>
+            <strong>Chuyên ngành</strong>
+            <span>Công nghệ thông tin</span>
+          </div>
+          <div>
+            <strong>Sở thích</strong>
+            <span>Lập trình, đọc sách, công nghệ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KỸ NĂNG -->
+    <section class="section" id="skills">
+      <div class="container reveal">
+        <p class="eyebrow">MÌNH BIẾT GÌ?</p>
+        <h2>Kỹ năng</h2>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <span>🌐</span>
+            <h3>HTML5</h3>
+            <p>Xây dựng cấu trúc trang web.</p>
+          </article>
+
+          <article class="skill-card">
+            <span>🎨</span>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, responsive và animation.</p>
+          </article>
+
+          <article class="skill-card">
+            <span>⚡</span>
+            <h3>JavaScript</h3>
+            <p>Xử lý sự kiện và tương tác giao diện.</p>
+          </article>
+
+          <article class="skill-card">
+            <span>🔧</span>
+            <h3>Git & GitHub</h3>
+            <p>Quản lý phiên bản và chia sẻ mã nguồn.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DỰ ÁN -->
+    <section class="section alternate" id="projects">
+      <div class="container reveal">
+        <p class="eyebrow">SẢN PHẨM CỦA MÌNH</p>
+        <h2>Dự án nổi bật</h2>
+
+        <div class="project-controls">
+          <input
+            id="project-search"
+            type="search"
+            placeholder="Tìm dự án theo tên hoặc mô tả..."
+            aria-label="Tìm dự án"
+          >
+
+          <div class="filters" role="group" aria-label="Lọc dự án">
+            <button class="filter active" data-filter="all" type="button">
+              Tất cả
+            </button>
+            <button class="filter" data-filter="html" type="button">
+              HTML/CSS
+            </button>
+            <button class="filter" data-filter="javascript" type="button">
+              JavaScript
+            </button>
+          </div>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <!-- DỰ ÁN 1 -->
+          <article class="project-card"
+            data-tags="html"
+            data-search="website giới thiệu bản thân portfolio html css">
+
+            <div class="project-icon">👤</div>
+
+            <div class="project-content">
+              <span class="tag">HTML/CSS</span>
+              <h3>Website Portfolio</h3>
+              <p>
+                Trang web giới thiệu cá nhân với giao diện responsive.
+              </p>
+            </div>
+          </article>
+
+          <!-- DỰ ÁN 2 -->
+          <article class="project-card"
+            data-tags="html javascript"
+            data-search="website bán hàng công nghệ sản phẩm javascript html css">
+
+            <div class="project-icon">🛒</div>
+
+            <div class="project-content">
+              <span class="tag">JavaScript</span>
+              <h3>Website bán hàng</h3>
+              <p>
+                Giao diện cửa hàng công nghệ và giỏ hàng mẫu.
+              </p>
+            </div>
+          </article>
+
+          <!-- DỰ ÁN 3 -->
+          <article class="project-card"
+            data-tags="javascript"
+            data-search="ứng dụng danh sách công việc todo list javascript">
+
+            <div class="project-icon">📝</div>
+
+            <div class="project-content">
+              <span class="tag">JavaScript</span>
+              <h3>To-do List</h3>
+              <p>
+                Ứng dụng quản lý công việc đơn giản trên trình duyệt.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p id="no-projects" hidden>
+          Không tìm thấy dự án phù hợp.
+        </p>
+      </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="reveal">
+          <p class="eyebrow">KẾT NỐI</p>
+          <h2>Liên hệ với mình</h2>
+          <p>Hãy để lại lời nhắn qua biểu mẫu bên cạnh.</p>
+          <p>📧 example@email.com</p>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <label for="name">Họ và tên</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Nhập họ và tên"
+            required
+          >
+          <small class="error" id="name-error"></small>
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="example@email.com"
+            required
+          >
+          <small class="error" id="email-error"></small>
+
+          <label for="message">Lời nhắn</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            maxlength="500"
+            placeholder="Nhập lời nhắn (10–500 ký tự)"
+            required
+          ></textarea>
+
+          <div class="message-meta">
+            <small class="error" id="message-error"></small>
+            <small id="char-count">0/500 ký tự</small>
+          </div>
+
+          <button class="btn" type="submit">
+            Kiểm tra lời nhắn
+          </button>
+
+          <p class="form-status" id="form-status"
+            role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Nguyễn Thị Phương Thảo
+      · Made with HTML, CSS & JavaScript
+    </div>
+  </footer>
+</body>
+</html>
